@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" media="screen" href="style.css">
+  <script src="index.js" type="module" defer></script>
+  <script src="index2.js" type="module" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+      <div class="entry">Visualizer</div>
+  <div class="container">
+    <div class="sidebar">
+      <select name="" id="selectAlgorithm" class="select-algorithm">
+        <option value="bubbleSort" selected>Bubble Sort</option>
+        <option value="selectionSort">Selection Sort</option>
+        <option value="quickSort">Quick Sort</option>
+      </select>
+      <div class="generate-new">
+        <p>Generate New Array</p>
+        <input type="number" name="sizeArray" id="numbersBars" max="20" min="1" value="10">
+        <button id="generateBtn">New</button>
+      </div>
+      <div class="buttons">
+        <button id="solveBtn">Solve</button>
+      </div>
+    </div>
+    <div class="stage" id="stage"></div>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <select name="" id="selectAlgorithm2" class="select-algorithm">
+        <option value="linearSearch" selected>Linear search</option>
+        <option value="binarySearch">Binary Search</option>
+      </select>
+      <div class="generate-new">
+        <p>Generate New Array</p>
+        <input type="number" name="sizeArray" id="numbersBars2" max="20" min="1" value="10">
+        <button id="generateBtn2">New</button>
+      </div>
+      <div style="margin-top :3px;"  class="generate-new">
+        <p>Enter target</p>
+        <input type="number" name="target" id="target" >
+      </div>
+      <div class="buttons">
+        <button id="solveBtn2">Search</button>
+      </div>
+    </div>
+    <div class="stage" id="stage2"></div>
+  </div>
+
+
+</body>
+
+</html>
